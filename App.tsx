@@ -7,7 +7,6 @@ import {
   ShieldCheck, 
   Heart, 
   Sparkles, 
-  ChevronRight,
   UserCheck,
   MessageCircle,
   Map
@@ -28,11 +27,9 @@ const App: React.FC = () => {
         
         {/* HERO SECTION */}
         <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-20 overflow-hidden">
-          {/* Hero Background Elements */}
           <div className="absolute top-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-white via-white/80 to-transparent"></div>
           
           <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
-            {/* 1. Location and Names */}
             <div className="flex flex-col gap-4 mb-8">
               <div className="inline-flex items-center justify-center gap-2 text-gray-500 text-xs md:text-sm font-semibold tracking-[0.2em] uppercase">
                 <MapPin size={14} className="text-[#5B0D15]" /> Palmas - TO
@@ -42,7 +39,6 @@ const App: React.FC = () => {
               </h1>
             </div>
 
-            {/* 2. Hero Image */}
             <div className="relative mb-10">
               <div className="absolute inset-0 bg-[#FDF2F2] rounded-full transform scale-110 -z-10 blur-2xl opacity-50"></div>
               <div className="relative w-64 h-64 md:w-[450px] md:h-[450px]">
@@ -51,7 +47,6 @@ const App: React.FC = () => {
                   alt="Dra. Grazielly Agreli" 
                   className="w-full h-full object-cover rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-[6px] border-white"
                 />
-                {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-2 md:bottom-8 md:-right-8 bg-white p-3 md:p-5 rounded-2xl shadow-xl flex items-center gap-3 border border-gray-100 animate-bounce-slow">
                    <div className="w-10 h-10 bg-[#FDF2F2] rounded-full flex items-center justify-center text-[#5B0D15]">
                      <Sparkles size={20} />
@@ -64,7 +59,6 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            {/* 3. Subheadline and CTA */}
             <div className="flex flex-col items-center gap-8 max-w-2xl">
               <p className="text-lg md:text-2xl text-gray-600 leading-relaxed font-light">
                 Minha missão é devolver a sua vontade de sorrir com segurança, naturalidade e o cuidado premium que você merece.
@@ -74,7 +68,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* AUTHORITY / WHO I AM */}
+        {/* AUTHORITY */}
         <section className="py-20 px-4 bg-white/50 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div className="relative group">
@@ -119,10 +113,9 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* RESULTS GRID */}
         <Gallery />
 
-        {/* WHY TRUST ME (Bloco 4) */}
+        {/* WHY TRUST ME */}
         <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -181,10 +174,8 @@ const App: React.FC = () => {
         <section className="py-20 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl text-center mb-16">Como funciona sua primeira consulta</h2>
-            
             <div className="grid gap-12 relative">
               <div className="hidden md:block absolute top-0 bottom-0 left-[50%] w-px bg-gray-100 -z-10"></div>
-              
               {[
                 { step: "01", title: "Contato via WhatsApp", desc: "Você clica no botão e inicia uma conversa rápida comigo ou com minha equipe." },
                 { step: "02", title: "Agendamento Simples", desc: "Escolhemos o melhor horário para você vir ao consultório em Palmas." },
@@ -219,7 +210,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* FAMILY / MESSAGE SECTION */}
+        {/* FAMILY MESSAGE */}
         <section className="py-20 px-4 bg-white relative overflow-hidden">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
@@ -244,11 +235,9 @@ const App: React.FC = () => {
 
         {/* FINAL CTA */}
         <section className="py-24 px-4 bg-[#2D0606] text-white relative overflow-hidden">
-          {/* Subtle logo background for the final section */}
           <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
             <img src={IMAGES.logo} className="w-[80%] max-w-lg filter invert" alt="Watermark" />
           </div>
-
           <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col gap-8">
             <h2 className="text-4xl md:text-5xl font-serif">Seu novo sorriso está a apenas uma conversa de distância.</h2>
             <p className="text-xl text-[#F5D5D5] opacity-90">
@@ -259,7 +248,7 @@ const App: React.FC = () => {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 bg-white text-[#5B0D15] font-black py-6 px-10 rounded-full shadow-2xl hover:scale-105 transition-all w-full md:w-auto text-xl"
+                className="inline-flex items-center justify-center gap-3 bg-white text-[#5B0D15] font-black py-6 px-10 rounded-full shadow-2xl hover:scale-105 transition-all w-full md:w-auto text-xl text-center"
               >
                 <MessageCircle size={24} fill="currentColor" />
                 AGENDAR AVALIAÇÃO AGORA
@@ -298,7 +287,6 @@ const App: React.FC = () => {
             </p>
           </div>
         </footer>
-
       </main>
     </div>
   );
