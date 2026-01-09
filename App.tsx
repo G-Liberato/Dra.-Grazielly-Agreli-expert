@@ -278,7 +278,7 @@ const App: React.FC = () => {
             
             <div className="text-center">
               <p className="text-xl font-serif text-gray-800 mb-1">Dra. Grazielly Agreli</p>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Especialista em Resinas e Estética • Palmas - TO</p>
+              <p className="text-gray-500 text-sm uppercase tracking-widest">Especialista em Resinas e Estética Oral • Palmas - TO</p>
             </div>
 
             <div className="flex gap-6">
