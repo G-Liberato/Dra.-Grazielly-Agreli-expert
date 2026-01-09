@@ -9,7 +9,8 @@ import {
   Sparkles, 
   ChevronRight,
   UserCheck,
-  MessageCircle
+  MessageCircle,
+  Map
 } from 'lucide-react';
 import { IMAGES, INSTAGRAM_LINK, WHATSAPP_LINK } from './constants';
 import { CTAButton } from './components/CTAButton';
@@ -207,9 +208,12 @@ const App: React.FC = () => {
         <section className="py-20 px-4 bg-gray-50/80">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl text-center mb-12">Bastidores e Atendimento</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <img src={IMAGES.expert[1]} alt="Consultório" className="rounded-2xl shadow-md w-full h-80 object-cover" />
-              <img src={IMAGES.expert[2]} alt="Atendimento" className="rounded-2xl shadow-md w-full h-80 object-cover" />
+            <div className="flex justify-center">
+              <img 
+                src={IMAGES.expert[2]} 
+                alt="Atendimento" 
+                className="rounded-2xl shadow-md w-full max-w-3xl h-[400px] object-cover" 
+              />
             </div>
             <p className="text-center mt-8 text-gray-500 italic">Ambiente planejado para oferecer segurança e os melhores resultados.</p>
           </div>
@@ -283,6 +287,9 @@ const App: React.FC = () => {
               </a>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-sm hover:text-[#5B0D15] transition-colors text-gray-800">
                 <MessageCircle size={24} />
+              </a>
+              <a href="https://maps.app.goo.gl/7CqAx9zAT5uh1dU97?g_st=ipc" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-sm hover:text-[#5B0D15] transition-colors text-gray-800">
+                <Map size={24} />
               </a>
             </div>
 
