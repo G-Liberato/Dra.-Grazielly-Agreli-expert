@@ -37,7 +37,7 @@ const App: React.FC = () => {
                 <MapPin size={14} className="text-[#5B0D15]" /> Palmas - TO
               </div>
               <h1 className="text-4xl md:text-7xl text-gray-900 leading-tight max-w-3xl">
-                Eu sou <span className="text-gray-800 font-bold italic">Grazielly Agreli</span>,<br className="hidden md:block" /> especialista em <span className="text-[#5B0D15]">Resinas e Estética</span>.
+                Eu sou <span className="text-gray-800 font-bold italic">Grazielly Agreli</span>,<br className="hidden md:block" /> especialista em <span className="text-[#5B0D15]">Resinas e Estética oral</span>.
               </h1>
             </div>
 
